@@ -1,0 +1,49 @@
+{
+"projects": [
+    {
+        "id" : 1,
+        "project_name" : "Random Quote Generator",
+        "description" : "",
+        "technologies" : ["HTML","CSS","JavaScript"],
+        "live_link" : "",
+        "github_link" : "",
+        "image_urls" : ""
+    },
+    {
+        "id" : 2,
+        "project_name" : "Data Pagination and Filtering",
+        "description" : "",
+        "technologies" : ["HTML","CSS","JavaScript"],
+        "live_link" : "",
+        "github_link" : "",
+        "image_urls" : ""
+    },
+    {
+        "id" : 3,
+        "project_name" : "Interactive Form",
+        "description" : "",
+        "technologies" : ["HTML","CSS","JavaScript", "Web Accessibility","Form Validation"],
+        "live_link" : "",
+        "github_link" : "",
+        "image_urls" : ""
+    },
+    {
+        "id" : 4,
+        "project_name" : "Game Show",
+        "description" : "",
+        "technologies" : ["HTML","CSS","JavaScript", "OOP"],
+        "live_link" : "",
+        "github_link" : "",
+        "image_urls" : ""
+    },
+    {
+        "id" : 5,
+        "project_name" : "Public API Requests",
+        "description" : "",
+        "technologies" : ["HTML","CSS","JavaScript", "Fetch API", "AJAX"],
+        "live_link" : "",
+        "github_link" : "",
+        "image_urls" : ""
+    }
+]
+}
