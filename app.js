@@ -10,7 +10,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
     // console.log(data.projects);
-    res.locals = data.projects;
+    res.locals.projects = data.projects;
     res.render('index');
 });
 

@@ -1,49 +1,74 @@
 {
 "projects": [
     {
-        "id" : 1,
+        "id" : 0,
         "project_name" : "Random Quote Generator",
-        "description" : "",
+        "description" : "a program that displays a randomly selected quote each time the user clicks a button",
         "technologies" : ["HTML","CSS","JavaScript"],
-        "live_link" : "",
-        "github_link" : "",
-        "image_urls" : ""
+        "live_link" : "https://psuschak92.github.io/random-quote-generator/",
+        "github_link" : "https://github.com/psuschak92/random-quote-generator",
+        "image_urls" : {
+            "main": "static/images/random-quotes/main.png",
+            "landscape":"../static/images/random-quotes/landscape.png",
+            "landscape_2":"../static/images/random-quotes/landscape_2.png",
+            "landscape_3":"../static/images/random-quotes/landscape_3.png"
+        }
+    },
+    {
+        "id" : 1,
+        "project_name" : "Data Pagination and Filtering",
+        "description" : "a directory that displays several “pages” of student data that the user can easily navigate and view",
+        "technologies" : ["HTML","CSS","JavaScript"],
+        "live_link" : "https://psuschak92.github.io/data-pagination-and-filtering/",
+        "github_link" : "https://github.com/psuschak92/data-pagination-and-filtering",
+        "image_urls" : {
+            "main": "static/images/data-pagination-and-filtering/main.png",
+            "landscape":"../static/images/data-pagination-and-filtering/landscape.png",
+            "landscape_2":"../static/images/data-pagination-and-filtering/landscape_2.png",
+            "landscape_3":"../static/images/data-pagination-and-filtering/landscape_3.png"
+        }
     },
     {
         "id" : 2,
-        "project_name" : "Data Pagination and Filtering",
-        "description" : "",
-        "technologies" : ["HTML","CSS","JavaScript"],
-        "live_link" : "",
-        "github_link" : "",
-        "image_urls" : ""
+        "project_name" : "Interactive Form",
+        "description" : "a user-friendly and engaging, registration form",
+        "technologies" : ["HTML","CSS","JavaScript", "Web Accessibility","Form Validation"],
+        "live_link" : "https://psuschak92.github.io/interactive-form/",
+        "github_link" : "https://github.com/psuschak92/interactive-form",
+        "image_urls" : {
+            "main": "static/images/interactive-form/main.png",
+            "landscape":"../static/images/interactive-form/landscape.png",
+            "landscape_2":"../static/images/interactive-form/landscape_2.png",
+            "landscape_3":"../static/images/interactive-form/landscape_3.png"
+        }
     },
     {
         "id" : 3,
-        "project_name" : "Interactive Form",
-        "description" : "",
-        "technologies" : ["HTML","CSS","JavaScript", "Web Accessibility","Form Validation"],
-        "live_link" : "",
-        "github_link" : "",
-        "image_urls" : ""
+        "project_name" : "Phrase Hunter",
+        "description" : "a browser-based, word guessing game",
+        "technologies" : ["HTML","CSS","JavaScript", "OOP"],
+        "live_link" : "https://psuschak92.github.io/oop-game-show-app/",
+        "github_link" : "https://github.com/psuschak92/oop-game-show-app",
+        "image_urls" : {
+            "main": "static/images/phrase-hunter/main.png",
+            "landscape":"../static/images/phrase-hunter/landscape.png",
+            "landscape_2":"../static/images/phrase-hunter/landscape_2.png",
+            "landscape_3":"../static/images/phrase-hunter/landscape_3.png"
+        }
     },
     {
         "id" : 4,
-        "project_name" : "Game Show",
-        "description" : "",
-        "technologies" : ["HTML","CSS","JavaScript", "OOP"],
-        "live_link" : "",
-        "github_link" : "",
-        "image_urls" : ""
-    },
-    {
-        "id" : 5,
         "project_name" : "Public API Requests",
-        "description" : "",
+        "description" : "an employee directory that communicates with a third-party API",
         "technologies" : ["HTML","CSS","JavaScript", "Fetch API", "AJAX"],
-        "live_link" : "",
-        "github_link" : "",
-        "image_urls" : ""
+        "live_link" : "https://psuschak92.github.io/public-api-requests/",
+        "github_link" : "https://github.com/psuschak92/public-api-requests",
+        "image_urls" : {
+            "main": "static/images/public-api-requests/main.png",
+            "landscape":"../static/images/public-api-requests/landscape.png",
+            "landscape_2":"../static/images/public-api-requests/landscape_2.png",
+            "landscape_3":"../static/images/public-api-requests/landscape_3.png"
+        }
     }
 ]
 }
