@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    // const err = new Error('500 error alert!');
+    // const err = new Error('Something broke!');
     // err.status = 500;
     // throw err;
     res.render('about');
@@ -24,7 +24,7 @@ app.get('/about', (req, res) => {
 app.get('/projects/:id', (req, res, next) => {
     const id = req.params.id;
     const project = data.projects[id];
-    console.log('id -> ' + project);
+    
     if (!project) {
         const err = new Error(`Oops, page not found. Looks like the route "${req.url}" does not exist.`);
         err.status = 404;
@@ -36,7 +36,7 @@ app.get('/projects/:id', (req, res, next) => {
 // 404 error endpoint
 app.use((req, res, next) => {
     console.log('Handling 404 error');
-    const err = new Error(`Oops, page not found. Looks like the route "${req.url}" does not exist.`);
+    const err = new Error(`Oops, page not found.`);
     err.status = 404;
     next(err);
 });
@@ -44,11 +44,14 @@ app.use((req, res, next) => {
 // 500 error endpoint
 app.use((err, req, res, next) => {
     console.log('Handling a global error');
-    console.log(err);
 
-    res.locals.error = err;
-    res.status(err.status);
-    res.send(err.message);
+    if(err.status === 404) {
+        res.render('page-not-found', {err});
+    } else {
+        res.locals.error = err;
+        res.status(err.status);
+        res.render('error', {err});
+    }
 });
 
 app.listen(3000, () => {
