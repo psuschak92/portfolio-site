@@ -17,7 +17,7 @@ body {
 
 body {
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -32,11 +32,11 @@ article {
 }
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 h5{
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
@@ -114,7 +114,7 @@ nav {
 nav a {
   width: 100%;
   vertical-align: middle;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
@@ -151,7 +151,8 @@ nav a span {
 .sidebar .thumbnail {
   width: 100%;
   max-width: 250px;
-  border: 4px solid #fff;
+  /* border: 4px solid #fff; */
+  border-radius: 2px;
 }
 
 .dev-intro-box {
@@ -171,7 +172,7 @@ nav a span {
 }
 
 .sidebar a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
@@ -242,13 +243,14 @@ nav a span {
 }
 
 .projects-box h5 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 2.25px;
   text-transform: uppercase;
-  color: #222;;
+  color: #222;
   margin: 0 auto 8px;
+  padding-top: 10px;
 }
 
 .cell a {
@@ -258,8 +260,9 @@ nav a span {
 .cell img {
   width: 100%;
   min-width: 100px;
-  border: 4px solid #fff;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  border-radius: 2px;
+  /* border: 4px solid #fff; */
+  box-shadow: 10px 10px 5px grey;
 }
 
 
@@ -284,8 +287,9 @@ nav a span {
   width: 100%;
   max-width: 1065px;
   margin-bottom: 15px;
-  border: 4px solid #fff;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  /* border: 4px solid #fff; */
+  border-radius: 2px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .btn-link {
@@ -361,4 +365,24 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
+}
+
+/* 
+  Error styles 
+*/
+
+.error-page {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+}
+
+.error-page h1 {
+  font-family: monospace;
+  font-size: 50px;
+}
+
+.error-page p {
+  font-family: monospace;
+  font-size: 25px;
 }

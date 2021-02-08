@@ -6,14 +6,13 @@ block content
 
     h1 My Programs
 
-    p Portfolio description
-
+    p These small projects encapsulate what I've been up to the last few months. The word guessing game is my personal favorite - it was fun using OOP with JavaScript. 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
         each project in projects
           .cell
-            a(href=`projects/${project.id}`)
+            a(href=`project/${project.id}`)
               img.thumbnail(src=`${project.image_urls.main}`, alt=`${project.description}`)
               h5= project.project_name
 

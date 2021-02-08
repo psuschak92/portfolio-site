@@ -31,8 +31,8 @@
     {
         "id" : 2,
         "project_name" : "Interactive Form",
-        "description" : "a user-friendly and engaging, registration form",
-        "technologies" : ["HTML","CSS","JavaScript", "Web Accessibility","Form Validation"],
+        "description" : "a user-friendly, registration form",
+        "technologies" : ["HTML","CSS","JavaScript"],
         "live_link" : "https://psuschak92.github.io/interactive-form/",
         "github_link" : "https://github.com/psuschak92/interactive-form",
         "image_urls" : {

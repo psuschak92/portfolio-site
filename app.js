@@ -21,10 +21,10 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
-app.get('/projects/:id', (req, res, next) => {
+app.get('/project/:id', (req, res, next) => {
     const id = req.params.id;
     const project = data.projects[id];
-    
+
     if (!project) {
         const err = new Error(`Oops, page not found. Looks like the route "${req.url}" does not exist.`);
         err.status = 404;
@@ -41,7 +41,7 @@ app.use((req, res, next) => {
     next(err);
 });
 
-// 500 error endpoint
+// Global error endpoint
 app.use((err, req, res, next) => {
     console.log('Handling a global error');
 

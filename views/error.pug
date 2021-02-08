@@ -2,7 +2,9 @@ extends layout.pug
 
 block content 
 
-    h1= err.status 
-    p= err.message 
-    p
-        a(href="/") Go to homepage  
+    .error-page
+        h1= err.status 
+        p= err.message 
+        p
+            a(href="/") 
+                span &larr; Go to homepage 
