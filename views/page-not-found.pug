@@ -4,7 +4,7 @@ block content
 
     .error-page
         h1= err.status 
-        p Oops, this page does not exist. Click the link below to go back to the home page.
+        p  #{err.message} Click the link below to go back to the home page.
         p
             a(href="/") 
                 span &larr; Go to homepage 

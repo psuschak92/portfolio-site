@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     // const err = new Error();
     // err.status = 500;
+    // err.message = 'Uh oh! Sorry, something went wrong with the server.';
     // throw err;
     res.render('about');
 });
@@ -40,6 +41,7 @@ app.use((req, res, next) => {
     console.log('Handling 404 error');
     const err = new Error();
     err.status = 404;
+    err.message = 'Oops, this page does not exist.';
     next(err);
 });
 

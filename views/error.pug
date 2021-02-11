@@ -4,7 +4,7 @@ block content
 
     .error-page
         h1= err.status 
-        p Uh oh! Sorry, something went wrong with the server.
+        p= err.message
         p 
             a(href="/") 
                 span &larr; Go to homepage 
